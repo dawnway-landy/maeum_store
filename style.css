@@ -136,10 +136,10 @@ p {
 }
 
 h1 {
-  max-width: 680px;
+  max-width: 640px;
   margin: 0;
-  font-size: clamp(2.55rem, 7vw, 5.9rem);
-  line-height: 1.05;
+  font-size: clamp(2.2rem, 4.8vw, 4rem);
+  line-height: 1.1;
   letter-spacing: 0;
 }
 
@@ -615,6 +615,13 @@ textarea {
   font-size: 0.9rem;
 }
 
+.mail-note {
+  margin: -6px 0 0;
+  color: rgba(111, 106, 97, 0.82);
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
 .form-button {
   width: 100%;
   margin-top: 4px;
@@ -731,7 +738,8 @@ textarea {
   }
 
   h1 {
-    font-size: clamp(2.25rem, 12vw, 3.4rem);
+    font-size: clamp(1.95rem, 9.2vw, 2.75rem);
+    line-height: 1.12;
   }
 
   .hero-copy {
