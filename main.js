@@ -45,7 +45,7 @@ form.addEventListener("submit", async (event) => {
   }
 
   submitButton.disabled = true;
-  submitButton.textContent = "신청 중입니다...";
+  submitButton.textContent = "초대장 신청 중입니다...";
   showMessage("", "");
 
   try {
@@ -61,7 +61,7 @@ form.addEventListener("submit", async (event) => {
     }
 
     showMessage(
-      "신청이 완료되었습니다. 감정 상점이 열리면 가장 먼저 초대장을 보내드릴게요. 그때까지 오늘의 감정을 잘 보관해두세요.",
+      "초대장 신청이 완료되었습니다. 감정 상점이 열리면 가장 먼저 알려드릴게요. 그때까지 오늘의 감정을 한 문장으로 잠시 보관해두세요.",
       "success"
     );
     form.reset();
@@ -69,7 +69,7 @@ form.addEventListener("submit", async (event) => {
     showMessage("신청 중 문제가 발생했습니다. 잠시 후 다시 시도해주세요.", "error");
   } finally {
     submitButton.disabled = false;
-    submitButton.textContent = "첫 번째 손님으로 신청하기";
+    submitButton.textContent = "감정 상점 초대장 받기";
   }
 });
 
